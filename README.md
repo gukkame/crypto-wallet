@@ -6,12 +6,18 @@
 
 ### Usage
 
-- navigate to \crypto-wallet\
+- navigate to `\crypto-wallet\`
 - run `npm run dev`
-- server should be running on `http://localhost:3000/`
+- front-end server should be running on `http://localhost:3000/`
 
+- navigate to `\server\`
+- run `go run .`
+- back-end server should be running on `http://localhost:8080/`
 
 ### Used technologies
 
 - React
 - Next.js
+
+- Go
+- SQLite
