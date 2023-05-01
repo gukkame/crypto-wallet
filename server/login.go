@@ -3,54 +3,60 @@ package main
 import (
 	"database/sql"
 	"encoding/json"
+	"fmt"
+	"log"
 	"net/http"
-	"strings"
 )
 
-//! Just example, 
-
-type post struct {
-	ID       int    `json:"id"`
-	Username string `json:"username"`
-	Title    string `json:"title"`
-	Slug     string `json:"slug"`
-	Content  string `json:"content"`
-	Created  string `json:"created"`
-	Image    string `json:"image"`
-}
+//! Just example,
 
 func login(w http.ResponseWriter, req *http.Request) {
 
-	json.NewDecoder(req.Body)
+	decoder := json.NewDecoder(req.Body)
 
-	var postdata []post
+	var loginData userData
+	var msg message
+
+	decoder.Decode(&loginData)
+
 	db, err := sql.Open("sqlite3", "./database/database.db")
 	checkErr(err)
 
-	postdata = getUser(db)
+	msg = getUser(db, loginData.Username)
 
 	defer db.Close()
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.WriteHeader(http.StatusOK)
-	if err := json.NewEncoder(w).Encode(postdata); err != nil {
+	if err := json.NewEncoder(w).Encode(msg); err != nil {
 		panic(err)
 	}
 }
 
-func getUser(db *sql.DB) []post {
-	rows, err := db.Query("SELECT id, username, title, content, created, image FROM post")
+func getUser(db *sql.DB, searchUsername string) message {
+	rows, err := db.Query("SELECT username, password FROM users WHERE username = ?", searchUsername)
 	checkErr(err)
-	postinfo := make([]post, 0)
-	for rows.Next() { 
-		onePost := post{}
-		err = rows.Scan(&onePost.ID, &onePost.Username, &onePost.Title, &onePost.Content, &onePost.Created, &onePost.Image)
-		checkErr(err)
-		time := ""
-		time = onePost.Created[:10]
-		onePost.Created = time
-		onePost.Slug = strings.Replace(onePost.Title, " ", "-", -1)
-		postinfo = append(postinfo, onePost)
+
+	err = rows.Err()
+	if err != nil {
+		log.Fatal(err)
 	}
-	return postinfo
+
+	var people userData
+
+	// loop through database table
+	for rows.Next() {
+		err = rows.Scan(&people.Username, &people.Password)
+		checkErr(err)
+	}
+	err = rows.Err()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	//TODO Check if user exist or not. Yes send user, No send message
+
+	fmt.Print("Log in person: ", people)
+	return message{Msg: "done"}
+
 }
