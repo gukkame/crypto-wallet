@@ -9,8 +9,12 @@ import (
 
 type userData struct {
 	Username string `json:"username"`
-	Secret   string `json:"secret"`
+	Secret   secret `json:"secret"`
 	Password string `json:"password"`
+}
+type secret struct {
+	Id   string `json:"id"`
+	Word string `json:"word"`
 }
 type message struct {
 	Msg   string `json:"msg"`
@@ -39,6 +43,7 @@ func signup(w http.ResponseWriter, req *http.Request) {
 		panic(err)
 	}
 }
+
 // Save user to DataBase
 func saveUser(db *sql.DB, sigupData userData) message {
 	var msg message
