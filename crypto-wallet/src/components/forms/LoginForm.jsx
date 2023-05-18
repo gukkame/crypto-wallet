@@ -5,7 +5,7 @@ import {
 } from "../../modules/localStorage";
 import { useState } from "react";
 
-import styles from "@/styles/Login.module.css";
+import styles from "@/styles/Auth.module.css";
 
 export default function LogInForm() {
   const [state, setState] = useState({
@@ -31,27 +31,31 @@ export default function LogInForm() {
   };
 
   return (
-    <div>
+    <div className={`${styles.formContainer}`}>
       <form onSubmit={handleSubmit}>
-        <div className="form-control">
-          <label>Email</label>
+        <div className={`${styles.formInput}`}>
+      
+          <i className={`${styles.formInputIcon}`}></i>
           <input
             type="text"
             name="email"
+            placeholder="Email"
             value={state.email}
             onChange={handleInputChange}
           />
         </div>
-        <div className="form-control">
+        <div className={`${styles.formInput}`}>
           <label>Password</label>
+   
           <input
             type="password"
             name="password"
+            placeholder="Password"
             value={state.password}
             onChange={handleInputChange}
           />
         </div>
-        <div className="form-control">
+        <div type="submit" className={`${styles.formInput}`}>
           <label></label>
           <button type="submit">Login</button>
         </div>

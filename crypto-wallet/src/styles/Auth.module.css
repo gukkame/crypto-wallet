@@ -1,0 +1,94 @@
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+
+    position: absolute;
+    width: 736px;
+    height: 100%;
+    left: calc(50% - 736px/2);
+
+
+    background: linear-gradient(135.5deg, rgb(86, 225, 248, 0.1) 17.67%, rgb(49, 182, 255, 0.1) 92.01%);
+}
+
+.loginForm h2 {
+    position: absolute;
+    left: calc(50% - 582px/2 + 58px);
+    top: 132px;
+
+    font-weight: 700;
+    font-size: 40px;
+
+    display: flex;
+    align-items: flex-end;
+
+    color: #FDFFFF;
+}
+
+.loginForm h3 {
+
+    position: absolute;
+    width: 239px;
+    height: 55px;
+    left: calc(50% - 239px/2 + 47.5px);
+    top: 304px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+
+
+    display: flex;
+    align-items: flex-end;
+
+    color: #FFFFFF;
+}
+
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.formInput {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 18px;
+    gap: 24px;
+
+
+
+    background: #E1DDDD;
+    border-radius: 12px;
+}
+
+.formInput[type="submit"] {
+    background-color: blue;
+    color: white;
+}
+
+.formInput .formInputIcon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+
+
+    margin-right: 10px;
+    background-image: url('../assets/icons/email.png');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
