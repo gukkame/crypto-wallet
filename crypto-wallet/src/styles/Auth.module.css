@@ -22,11 +22,11 @@
 .loginForm h2 {
 
     position: absolute;
-    top: 22%;
+    top: 25%;
 
-    font-family: 'Manrope';
+
     font-style: normal;
-    font-weight: 700;
+    font-weight: 520;
     font-size: 40px;
 
 
@@ -43,7 +43,7 @@
     width: 320px;
     margin: 0 auto;
     margin-top: 28%;
-   text-align: right;
+    text-align: right;
 }
 
 .form_input_wrapper {
@@ -73,10 +73,12 @@
 
 }
 
-.formInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.formInput::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgb(255, 255, 255);
-    opacity: 1; /* Firefox */
-  }
+    opacity: 1;
+    /* Firefox */
+}
 
 .formInput:focus {
     outline: none;
@@ -102,17 +104,24 @@
     font-size: 20px;
 }
 
+.formInput[type="submit"]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 20px 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background: #00003C;
+    color: #56E1F8;
+}
+
 .formMailIcon {
     display: inline-block;
     width: 16px;
     height: 16px;
-    
+
     margin: 0 7px 0 15px;
     background-image: url('../assets/icons/email.png');
 
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .formEyeIcon {
     display: inline-block;
     width: 18px;

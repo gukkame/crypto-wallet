@@ -9,9 +9,9 @@ export default function LogInPage() {
       <h2> Autorizēties </h2>
       <LogInForm />
 
-      <h4>
+      <p>
         Nav sava konta? <Link href={`/signup`}>Izveido jaunu </Link>
-      </h4>
+      </p>
     </div>
   );
 }
