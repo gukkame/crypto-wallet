@@ -6,12 +6,12 @@ export default function LogInPage() {
   return (
     //className={`${styles.main}`}
     <div className={`${styles.loginForm}`}>
-      <h2> Sveiks, esi gatavs darboties? </h2>
-      <h3> Autorizēties </h3>
+      <h2> Autorizēties </h2>
       <LogInForm />
-      <Link href={`/`}>
-        <button>Return to Home page</button>
-      </Link>
+
+      <h4>
+        Nav sava konta? <Link href={`/signup`}>Izveido jaunu </Link>
+      </h4>
     </div>
   );
 }

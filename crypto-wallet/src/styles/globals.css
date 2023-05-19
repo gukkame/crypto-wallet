@@ -22,6 +22,10 @@
    background: var(--foreground-rgb);
  }
 
+ a {
+   text-decoration: none;
+   color: #56E1F8;
+ }
 
  /* Prefered mode */
  @media (prefers-color-scheme: dark) {

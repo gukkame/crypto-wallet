@@ -33,32 +33,35 @@ export default function LogInForm() {
   return (
     <div className={`${styles.formContainer}`}>
       <form onSubmit={handleSubmit}>
-        <div className={`${styles.formInput}`}>
-      
-          <i className={`${styles.formInputIcon}`}></i>
+        <div className={`${styles.form_input_wrapper}`}>
+          <i className={`${styles.formMailIcon}`}></i>
           <input
             type="text"
             name="email"
-            placeholder="Email"
+            placeholder="Epasts"
             value={state.email}
             onChange={handleInputChange}
+            className={`${styles.formInput}`}
           />
         </div>
-        <div className={`${styles.formInput}`}>
-          <label>Password</label>
-   
+
+        <div className={`${styles.form_input_wrapper}`}>
+          <i className={`${styles.formMailIcon}`}></i>
           <input
             type="password"
             name="password"
-            placeholder="Password"
+            placeholder="Parole"
             value={state.password}
             onChange={handleInputChange}
+            className={`${styles.formInput}`}
           />
+          <i className={`${styles.formEyeIcon}`}></i>
         </div>
-        <div type="submit" className={`${styles.formInput}`}>
-          <label></label>
-          <button type="submit">Login</button>
-        </div>
+        <p> Aizmirsāt paroli?</p>
+
+        <button className={styles["formInput"]} type="submit">
+          Turpināt
+        </button>
       </form>
     </div>
   );
