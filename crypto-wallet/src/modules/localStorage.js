@@ -16,7 +16,9 @@ export function getDataFromLocalStorage(name, password) {
     console.log("wrong password");
   } else if (user.password == password) {
     console.log("you are in :)");
+    return true
   }
+  return false
 }
 
 //remove data from local storage

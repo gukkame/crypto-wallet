@@ -46,7 +46,7 @@ export default function LogInForm() {
         </div>
 
         <div className={`${styles.form_input_wrapper}`}>
-          <i className={`${styles.formMailIcon}`}></i>
+          <i className={`${styles.formLocked}`}></i>
           <input
             type="password"
             name="password"

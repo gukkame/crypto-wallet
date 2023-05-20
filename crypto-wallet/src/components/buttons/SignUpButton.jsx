@@ -1,5 +1,8 @@
+import Link from "next/link";
 export default function SignUpButton() {
-    return (
-        <button>Sign Up button</button>
-    )
+  return (
+    <Link href={`/signup`}>
+      <button> Sign Up button</button>
+    </Link>
+  );
 }
