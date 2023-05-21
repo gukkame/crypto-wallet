@@ -43,14 +43,14 @@ export default function SecretForm({ onData }) {
         <button
           className={`${styles["form-input"]} ${styles["secret-btn"]}`}
           type="submit"
-          onClick={() => handleSubmit('secret-test')}
+          onClick={() => handleSubmit("secret-test")}
         >
           Turpināt
         </button>
         <button
           className={`${styles["form-input"]} ${styles["back-btn"]}`}
           type="submit"
-          onClick={() => handleSubmit('register')}
+          onClick={() => handleSubmit("register")}
         >
           Atpakaļ
         </button>

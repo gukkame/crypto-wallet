@@ -6,7 +6,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 export default function SignUpPage() {
-  const [currentPage, setCurrentPage] = useState("register");
+  const [currentPage, setCurrentPage] = useState("secret-test");
 
   const handleDataFromAnotherPage = (data) => {
     setCurrentPage(data);
@@ -14,12 +14,12 @@ export default function SignUpPage() {
 
   let content = null;
 
-  if (currentPage === "secret") {
-    content = <SecretForm onData={handleDataFromAnotherPage}/>;
-  } else if (currentPage === "register") {
+  if (currentPage === "register") {
     content = <SignUpForm onData={handleDataFromAnotherPage} />;
+  } else if (currentPage === "secret") {
+    content = <SecretForm onData={handleDataFromAnotherPage} />;
   } else if (currentPage === "secret-test") {
-    content = <TestSecretForm />;
+    content = <TestSecretForm onData={handleDataFromAnotherPage} />;
   }
 
   return <>{content}</>;
