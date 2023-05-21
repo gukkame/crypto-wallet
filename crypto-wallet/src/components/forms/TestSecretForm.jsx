@@ -56,7 +56,7 @@ export default function TestSecretForm({ onData }) {
         <button
           className={`${styles["form-input"]} ${styles["secret-btn"]}`}
           type="submit"
-          onClick={() => handleSubmit("secret-test")}
+          onClick={() => handleSubmit("end-signup")}
         >
           Turpināt
         </button>

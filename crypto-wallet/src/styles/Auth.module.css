@@ -265,17 +265,19 @@
     height: 60px;
 }
 
-
+/* Secret phrase tetsing list */
 .custom-list {
     list-style: none;
     margin-top: 30px;
 }
-.list-item{
+
+.list-item {
     list-style: none;
     height: 40px;
     margin-top: 30px;
-    
+
 }
+
 .dotted-underline {
     list-style: none;
     border: none;
@@ -287,5 +289,15 @@
 
     color: white;
     width: auto;
+}
 
+/* Congradulation text */
+.congratulation {
+    margin: 110px 0;
+    text-align: center;
+
+}
+
+.congratulation h2 {
+    display: block;
 }
