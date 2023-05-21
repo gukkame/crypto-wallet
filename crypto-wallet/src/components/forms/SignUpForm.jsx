@@ -154,6 +154,9 @@ export default function SignUpForm({ onData }) {
             <Link href={`/terms-conditions`}> Crypto Cabata noteikumiem </Link>
           </p>
         </div>
+
+
+        
       </div>
     </>
   );
