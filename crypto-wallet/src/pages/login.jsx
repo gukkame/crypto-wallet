@@ -5,7 +5,7 @@ import styles from "@/styles/Auth.module.css";
 export default function LogInPage() {
   return (
     //className={`${styles.main}`}
-    <div className={`${styles.loginForm}`}>
+    <div className={styles["login-form"]}>
       <h2> Autorizēties </h2>
       <LogInForm />
 

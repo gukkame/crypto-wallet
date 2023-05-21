@@ -1,3 +1,44 @@
+/* Login form layout */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+
+    position: absolute;
+    width: 736px;
+    height: 100%;
+    left: calc(50% - 736px/2);
+
+    text-decoration: none;
+    color: white;
+
+
+    background: linear-gradient(135.5deg, rgb(86, 225, 248, 0.1) 17.67%, rgb(49, 182, 255, 0.1) 92.01%);
+}
+
+/* Title of Form */
+.login-form h2 {
+
+    position: absolute;
+    top: 22%;
+
+
+    font-style: normal;
+    font-weight: 520;
+    font-size: 40px;
+
+
+    display: flex;
+    align-items: flex-end;
+
+    color: #FFFFFF;
+}
+
+
+/* Line under Register */
 .line-row {
     top: 130px;
     display: flex;
@@ -22,48 +63,10 @@
 }
 
 
-.loginForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    gap: 8px;
-
-    position: absolute;
-    width: 736px;
-    height: 100%;
-    left: calc(50% - 736px/2);
-
-    text-decoration: none;
-    color: white;
 
 
-    background: linear-gradient(135.5deg, rgb(86, 225, 248, 0.1) 17.67%, rgb(49, 182, 255, 0.1) 92.01%);
-}
-
-
-.loginForm h2 {
-
-    position: absolute;
-    top: 22%;
-
-
-    font-style: normal;
-    font-weight: 520;
-    font-size: 40px;
-
-
-    display: flex;
-    align-items: flex-end;
-
-    color: #FFFFFF;
-}
-
-
-
-
-.formContainer {
+/* Form layout */
+.form-container {
     display: flex;
     flex-direction: column;
     width: 320px;
@@ -72,7 +75,7 @@
     text-align: right;
 }
 
-.form_input_wrapper {
+.form-input-wrapper {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
@@ -80,7 +83,7 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
-.form_input_wrapper_false {
+.form-input-wrapper-false {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -89,18 +92,9 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
-.rule_wrapper {
-    display: flex;
-    margin-bottom: 10px;
-    margin-top: 50px;
-    border-radius: 12px;
-}
 
-.rules {
-    text-decoration: underline red;
-}
 
-.formInput {
+.form-input {
     border: 0px solid #ccc;
     border-radius: 4px;
 
@@ -117,17 +111,17 @@
 
 }
 
-.formInput::placeholder {
+.form-input::placeholder {
     color: rgba(255, 255, 255, 0.644);
     opacity: 1;
 }
 
-.formInput:focus {
+.form-input:focus {
     outline: none;
     background: none;
 }
 
-.formInput[type="submit"] {
+.form-input[type="submit"] {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -139,6 +133,7 @@
     margin-top: 23%;
     margin-bottom: 2%;
 
+    pointer-events:all;
     background: linear-gradient(180deg, #56E1F8 0%, #31B6FF 100%);
     border-radius: 12px;
     color: black;
@@ -147,18 +142,37 @@
     font-size: 20px;
 }
 
-.formInput[type="submit"]:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 20px 17px 50px 0 rgba(0, 0, 0, 0.19);
-    background: #00003C;
-    color: #56E1F8;
+.form-input[type="submit"]:active {
+    background: linear-gradient(180deg, #56e0f8a9 0%, #31b7ff98 100%);
+    transform: translateY(1px) 
+}
+
+.form-input-inactive[type="submit"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 55px;
+
+    margin-top: 23%;
+    margin-bottom: 2%;
+
+    background: grey;
+    pointer-events: none;
+    border-radius: 12px;
+    color: black;
+
+    font-weight: 600;
+    font-size: 20px;
 }
 
 
 
 
-
-
-.formMailIcon {
+/* Form Icons */
+.form-mail-icon {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -170,7 +184,7 @@
     background-size: contain;
 }
 
-.formEyeIcon {
+.form-eye-icon {
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -182,7 +196,7 @@
     background-size: contain;
 }
 
-.formLocked {
+.form-locked-icon {
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -193,6 +207,20 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+/* Form rules style */
+.rule-wrapper {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+
+.rules {
+    text-decoration: underline red;
+}
+
+
 
 .grid-secret {
 

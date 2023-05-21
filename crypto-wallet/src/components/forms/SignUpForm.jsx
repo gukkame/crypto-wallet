@@ -7,9 +7,7 @@ export default function SignUpForm({ onData }) {
   const [rulesChecked, setChecked] = useState(false);
   const [passChecked, setPassChecked] = useState(true);
 
-  useEffect(() => {
-    console.log(rulesChecked);
-  }, [rulesChecked]);
+  useEffect(() => {}, [rulesChecked]);
 
   const [state, setState] = useState({
     email: "",
@@ -68,7 +66,7 @@ export default function SignUpForm({ onData }) {
 
   return (
     <>
-      <div className={styles["loginForm"]}>
+      <div className={styles["login-form"]}>
         <h2> Reģistrēties </h2>
         <div className={styles["line-row"]}>
           <div className={styles["line-on"]}></div>
@@ -77,59 +75,66 @@ export default function SignUpForm({ onData }) {
           <div className={styles["line-off"]}></div>
         </div>
 
-        <div className={styles["formContainer"]}>
+        <div className={styles["form-container"]}>
           <form onSubmit={handleSubmit}>
-            <div className={styles["form_input_wrapper"]}>
-              <i className={styles["formMailIcon"]}></i>
+            <div className={styles["form-input-wrapper"]}>
+              <i className={styles["form-mail-icon"]}></i>
               <input
                 type="email"
                 name="email"
                 placeholder="Epasts"
                 value={state.email}
                 onChange={handleInputChange}
-                className={`${styles.formInput}`}
+                className={styles["form-input"]}
               />
             </div>
 
             <div
               className={
                 passChecked
-                  ? styles["form_input_wrapper"]
-                  : styles["form_input_wrapper_false"]
+                  ? styles["form-input-wrapper"]
+                  : styles["form-input-wrapper-false"]
               }
             >
-              <i className={styles["formLocked"]}></i>
+              <i className={styles["form-locked-icon"]}></i>
               <input
                 type="password"
                 name="password"
                 placeholder="Parole"
                 value={state.password}
                 onChange={handleInputChange}
-                className={`${styles.formInput}`}
+                className={styles["form-input"]}
               />
-              <i className={styles["formEyeIcon"]}></i>
+              <i className={styles["form-eye-icon"]}></i>
             </div>
 
             <div
               className={
                 passChecked
-                  ? styles["form_input_wrapper"]
-                  : styles["form_input_wrapper_false"]
+                  ? styles["form-input-wrapper"]
+                  : styles["form-input-wrapper-false"]
               }
             >
-              <i className={styles["formLocked"]}></i>
+              <i className={styles["form-locked-icon"]}></i>
               <input
                 type="password"
                 name="passwordRepeat"
                 placeholder="Parole atkārtoti"
                 value={state.passwordRepeat}
                 onChange={handleInputChange}
-                className={`${styles.formInput}`}
+                className={styles["form-input"]}
               />
-              <i className={styles["formEyeIcon"]}></i>
+              <i className={styles["form-eye-icon"]}></i>
             </div>
 
-            <button className={styles["formInput"]} type="submit">
+            <button
+              className={
+                rulesChecked
+                  ? styles["form-input"]
+                  : styles["form-input-inactive"]
+              }
+              type="submit"
+            >
               Turpināt
             </button>
           </form>
@@ -137,7 +142,7 @@ export default function SignUpForm({ onData }) {
         <p>
           Esi jau lietotājs? <Link href={`/login`}> Autorizējies </Link>
         </p>
-        <div className={styles["rule_wrapper"]}>
+        <div className={styles["rule-wrapper"]}>
           <input
             type="checkbox"
             checked={rulesChecked}

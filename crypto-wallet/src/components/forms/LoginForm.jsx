@@ -31,35 +31,35 @@ export default function LogInForm() {
   };
 
   return (
-    <div className={`${styles.formContainer}`}>
+    <div className={styles["form-container"]}>
       <form onSubmit={handleSubmit}>
-        <div className={`${styles.form_input_wrapper}`}>
-          <i className={`${styles.formMailIcon}`}></i>
+        <div className={styles["form-input-wrapper"]}>
+          <i className={styles["form-mail-icon"]}></i>
           <input
             type="text"
             name="email"
             placeholder="Epasts"
             value={state.email}
             onChange={handleInputChange}
-            className={`${styles.formInput}`}
+            className={styles["form-input"]}
           />
         </div>
 
-        <div className={`${styles.form_input_wrapper}`}>
-          <i className={`${styles.formLocked}`}></i>
+        <div className={styles["form-input-wrapper"]}>
+          <i className={styles["form-locked-icon"]}></i>
           <input
             type="password"
             name="password"
             placeholder="Parole"
             value={state.password}
             onChange={handleInputChange}
-            className={`${styles.formInput}`}
+            className={styles["form-input"]}
           />
-          <i className={`${styles.formEyeIcon}`}></i>
+          <i className={styles["form-eye-icon"]}></i>
         </div>
         <p> Aizmirsāt paroli?</p>
 
-        <button className={styles["formInput"]} type="submit">
+        <button className={styles["form-input"]} type="submit">
           Turpināt
         </button>
       </form>
