@@ -215,6 +215,19 @@
     text-decoration: underline red;
 }
 
+/* Secret page */
+
+.secret-line {
+    margin-bottom: 0;
+}
+.secret-btn[type="submit"] {
+    margin-top: 15px;
+}
+.back-btn[type="submit"] {
+    margin-top: 15px;
+    color: white;
+    background: rgba(55, 189, 254, 0.1);
+}
 
 /* Secret Form grid */
 .secret-form-container {
@@ -222,7 +235,7 @@
     flex-direction: column;
     width: 320px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -235,6 +248,17 @@
 
 .grid-item {
     background-color: #00003C;
-    padding: 10px;
+    padding: 20px 20px;
     text-align: center;
+}
+
+.secret-phrase-warning{
+    background: rgba(217, 217, 217, 0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 60px;
 }

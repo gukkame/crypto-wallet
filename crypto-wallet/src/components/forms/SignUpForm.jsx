@@ -61,7 +61,7 @@ export default function SignUpForm({ onData }) {
     }
     setDataInLocalStorage(state.email, state.password);
     console.log("User saved succesfully!");
-    onData("true");
+    onData("secret");
   };
 
   return (
