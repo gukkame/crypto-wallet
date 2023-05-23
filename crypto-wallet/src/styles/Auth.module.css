@@ -73,7 +73,7 @@
 .form-input-wrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin: 15px 0px;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.2);
 }
@@ -102,8 +102,6 @@
 
     color: rgb(255, 255, 255);
     background-color: rgba(49, 182, 255, 0);
-
-
 }
 
 .form-input::placeholder {
@@ -165,43 +163,6 @@
 
 
 
-
-/* Form Icons */
-.form-mail-icon {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-
-    margin: 0 7px 0 15px;
-    background-image: url('../assets/icons/email.png');
-
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.form-eye-icon {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-
-    margin: 4px 7px 0 15px;
-    background-image: url('../assets/icons/eye_closed.png');
-
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.form-locked-icon {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-
-    margin: 0px 7px 0 15px;
-    background-image: url('../assets/icons/locked.png');
-
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
 /* Form rules style */
 .rule-wrapper {

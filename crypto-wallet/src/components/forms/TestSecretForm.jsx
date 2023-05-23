@@ -1,5 +1,6 @@
 import styles from "@/styles/Auth.module.css";
 
+
 export default function TestSecretForm({ onData }) {
   const handleSubmit = (data) => {
     onData(data);

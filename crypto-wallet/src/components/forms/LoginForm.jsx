@@ -6,6 +6,7 @@ import {
 import { useState } from "react";
 
 import styles from "@/styles/Auth.module.css";
+import icons from "@/styles/Icons.module.css";
 
 export default function LogInForm() {
   const [state, setState] = useState({
@@ -34,7 +35,7 @@ export default function LogInForm() {
     <div className={styles["form-container"]}>
       <form onSubmit={handleSubmit}>
         <div className={styles["form-input-wrapper"]}>
-          <i className={styles["form-mail-icon"]}></i>
+          <i className={icons["form-mail-icon"]}></i>
           <input
             type="text"
             name="email"
@@ -46,7 +47,7 @@ export default function LogInForm() {
         </div>
 
         <div className={styles["form-input-wrapper"]}>
-          <i className={styles["form-locked-icon"]}></i>
+          <i className={icons["form-locked-icon"]}></i>
           <input
             type="password"
             name="password"
@@ -55,7 +56,7 @@ export default function LogInForm() {
             onChange={handleInputChange}
             className={styles["form-input"]}
           />
-          <i className={styles["form-eye-icon"]}></i>
+          <i className={icons["form-eye-icon"]}></i>
         </div>
         <p> Aizmirsāt paroli?</p>
 

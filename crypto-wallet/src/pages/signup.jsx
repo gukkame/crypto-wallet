@@ -6,7 +6,7 @@ import styles from "@/styles/Auth.module.css";
 import { useState } from "react";
 
 export default function SignUpPage() {
-  const [currentPage, setCurrentPage] = useState("secret-test");
+  const [currentPage, setCurrentPage] = useState("register");
 
   const handleDataFromAnotherPage = (data) => {
     setCurrentPage(data);

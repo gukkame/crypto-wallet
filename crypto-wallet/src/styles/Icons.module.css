@@ -1,0 +1,73 @@
+/* Form Icons */
+.form-mail-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+
+    margin: 0 7px 0 15px;
+    background-image: url('../assets/icons/email.png');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.form-eye-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+
+    margin: 4px 7px 0 15px;
+    background-image: url('../assets/icons/eye_closed.png');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.form-locked-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+
+    margin: 0px 7px 0 15px;
+    background-image: url('../assets/icons/locked.png');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Home page icons */
+
+.telegram {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    margin-right: 16px;
+    background-image: url('../assets/icons/social_media/telegram.png');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.twitter{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    margin-right: 16px;
+    background-image: url('../assets/icons/social_media/twitter.png');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.linkedin{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    margin-right: 16px;
+    background-image: url('../assets/icons/social_media/linkledin.png');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}

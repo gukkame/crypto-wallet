@@ -1,6 +1,9 @@
 import { setDataInLocalStorage } from "@/modules/localStorage";
 import { useState, useEffect } from "react";
+
 import styles from "@/styles/Auth.module.css";
+import icons from "@/styles/Icons.module.css";
+
 import Link from "next/link";
 
 export default function SignUpForm({ onData }) {
@@ -78,7 +81,7 @@ export default function SignUpForm({ onData }) {
         <div className={styles["form-container"]}>
           <form onSubmit={handleSubmit}>
             <div className={styles["form-input-wrapper"]}>
-              <i className={styles["form-mail-icon"]}></i>
+              <i className={icons["form-mail-icon"]}></i>
               <input
                 type="email"
                 name="email"
@@ -96,7 +99,7 @@ export default function SignUpForm({ onData }) {
                   : styles["form-input-wrapper-false"]
               }
             >
-              <i className={styles["form-locked-icon"]}></i>
+              <i className={icons["form-locked-icon"]}></i>
               <input
                 type="password"
                 name="password"
@@ -105,7 +108,7 @@ export default function SignUpForm({ onData }) {
                 onChange={handleInputChange}
                 className={styles["form-input"]}
               />
-              <i className={styles["form-eye-icon"]}></i>
+              <i className={icons["form-eye-icon"]}></i>
             </div>
 
             <div
@@ -115,7 +118,7 @@ export default function SignUpForm({ onData }) {
                   : styles["form-input-wrapper-false"]
               }
             >
-              <i className={styles["form-locked-icon"]}></i>
+              <i className={icons["form-locked-icon"]}></i>
               <input
                 type="password"
                 name="passwordRepeat"
@@ -124,7 +127,7 @@ export default function SignUpForm({ onData }) {
                 onChange={handleInputChange}
                 className={styles["form-input"]}
               />
-              <i className={styles["form-eye-icon"]}></i>
+              <i className={icons["form-eye-icon"]}></i>
             </div>
 
             <button
