@@ -281,11 +281,12 @@
   padding-bottom: 30px;
   padding-right: 40px;
 }
+
 .section-four .content {
   flex: 1;
 }
 
- .mobile-front {
+.mobile-front {
   background-image: url('../assets//home/section_4/mobile-front.png');
   background-size: cover;
   background-position: center;
@@ -295,7 +296,8 @@
   object-fit: cover;
   margin-right: 10px;
 }
- .boy-front {
+
+.boy-front {
   background-image: url('../assets//home/section_4/boy-front.png');
   background-size: cover;
   background-position: center;
@@ -305,7 +307,8 @@
   object-fit: cover;
   margin-right: 10px;
 }
- .wallet-front {
+
+.wallet-front {
   background-image: url('../assets//home/section_4/wallet-front.png');
   background-size: cover;
   background-position: center;
@@ -315,7 +318,8 @@
   object-fit: cover;
   margin-right: 10px;
 }
- .target-front {
+
+.target-front {
   background-image: url('../assets//home/section_4/target-front.png');
   background-size: cover;
   background-position: center;
@@ -326,3 +330,99 @@
   margin-right: 10px;
 }
 
+/* Section 5 */
+.section-five {
+  padding-top: 60px;
+  padding-left: 160px;
+  padding-right: 160px;
+  height: 520px;
+  background: #00003C;
+  text-align: left;
+}
+
+.section-five h1 {
+  font-size: 40px;
+  line-height: 55px;
+  margin-bottom: 40px;
+}
+
+.container-five {
+  display: flex;
+}
+
+.field1 {
+  flex: 2;
+}
+
+.field2 {
+  flex: 1;
+}
+
+.field3 {
+  flex: 1;
+}
+
+.card-five {
+  position: relative;
+}
+
+.imageWrapper-five {
+  position: relative;
+  width: fit-content;
+}
+
+.title-five {
+  display: flex;
+  align-items: flex-end;
+  text-align: left;
+  position: absolute;
+
+  padding: 25px;
+
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 3;
+}
+
+.image-news-1 {
+  background-image: url('../assets//home/section_5/news_1.png');
+  background-position: center;
+  width: 704px;
+  height: 344px;
+
+  border-radius: 10px;
+  z-index: 2;
+  object-fit: cover;
+}
+
+.image-news-2 {
+  background-image: url('../assets//home/section_5/news_2.png');
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 10px;
+  width: 344px;
+  height: 344px;
+}
+
+.image-news-3 {
+  background-image: url('../assets//home/section_5/news_3.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+
+  width: 344px;
+  height: 344px;
+}
+
+.gradient-five {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #00003C -15.41%, rgba(0, 0, 60, 0) 90.12%);
+  z-index: 1;
+}

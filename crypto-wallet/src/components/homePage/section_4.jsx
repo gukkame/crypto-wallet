@@ -20,7 +20,7 @@ export default function SectionFour() {
                 <div
                   className={styles["mobile-front"]}
                 />
-                <div className={styles.content}>
+                <div className={styles["content"]}>
                   <h3>Izveido kontu</h3>
                  
                   <br />
@@ -33,7 +33,7 @@ export default function SectionFour() {
                 <div
                   className={styles["wallet-front"]}
                 />
-                <div className={styles.content}>
+              <div className={styles["content"]}>
                   <h3>Iemaksā līdzekļus kontā</h3>
                   <br />
                   <p>Ieskaiti savā kontā, lai sāktu tirgot kriptovalūtu. Līdzekļus kontā vari iemaksāt izmantojot dažādākās maksājumu metodes.</p>
@@ -45,7 +45,7 @@ export default function SectionFour() {
                 <div
                   className={styles["boy-front"]}
                 />
-                <div className={styles.content}>
+                 <div className={styles["content"]}>
                   <h3>Sāc tirdzniecību</h3>
                   <br />
                   <p>Veic identitātes verifikāciju, lai parūpētos par sava konta un darījumu drošību.</p>
@@ -57,7 +57,7 @@ export default function SectionFour() {
                 <div
                   className={styles["target-front"]}
                 />
-                <div className={styles.content}>
+                  <div className={styles["content"]}>
                   <h3>Izveido kontu</h3>
                   <br />
                   <p>Sāc tirdzniecību - Viss gatavs. Pērc, pārdod, uzkrāj, pelni.</p>
