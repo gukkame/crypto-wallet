@@ -10,7 +10,7 @@ export default function SectionOne() {
           CryptoCabata ir vienkāršākā vieta, kur pirkt un pārdot kriptovalūtu.
           Reģistrējieties un sāciet jau šodien.
         </h2>{" "}
-        <br></br>
+        <br />
         <div className={styles["form-wrapper"]}>
           <div className={styles["form-input-wrapper"]}>
             <i className={icons["form-mail-icon"]}></i>
@@ -25,9 +25,9 @@ export default function SectionOne() {
             Pierakstīties
           </button>
         </div>
-        <br></br>
+        <br />
         <h2>Seko mums</h2>
-        <br></br>
+        <br />
         <i className={icons["telegram"]}></i>
         <i className={icons["twitter"]}></i>
         <i className={icons["linkedin"]}></i>

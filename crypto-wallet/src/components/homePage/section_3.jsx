@@ -3,7 +3,7 @@ import styles from "@/styles/Home.module.css";
 export default function SectionThree() {
   return (
     <section className={styles["section-three"]}>
-      <div className={`${styles.container}`}>
+      <div className={styles["container"]}>
         <br></br>
         <h1>Uzticamākā Kriptovalūtas Platforma</h1>
       </div>

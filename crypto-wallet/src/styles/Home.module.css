@@ -17,7 +17,8 @@
   flex: 1;
 }
 
-.container {
+.section-one .container,
+.section-three .container {
   margin-left: 10%;
   margin-top: 60px;
 
@@ -132,6 +133,17 @@
   margin-bottom: 60px;
 }
 
+.section-two .container {
+  padding-left: 30px;
+  margin-top: 60px;
+  padding-right: 290px;
+
+  flex-direction: column;
+
+  text-align: left;
+  justify-content: center;
+}
+
 .read-more {
   font-weight: 500;
   font-size: 20px;
@@ -207,11 +219,110 @@
 }
 
 /* Section 4 */
-.section-two {
+.section-four {
   display: flex;
   text-align: left;
 
   background-image: url('../assets//home/background.png');
   background-size: cover;
   background-repeat: no-repeat;
+
 }
+
+.section-four .container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.section-four .item {
+  flex: 2;
+  width: 100%;
+}
+
+.section-four .item:first-child {
+  flex: 1;
+  width: 100%;
+  align-self: center;
+}
+
+.img-phone {
+  background-image: url('../assets//home/section_4/Iphone.png');
+  background-size: cover;
+  background-position: center;
+  width: 246px;
+  height: 480px;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 360px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  margin-right: 120px;
+}
+
+.flexbox {
+  margin-top: 30px;
+  margin-right: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.field {
+  flex-basis: 50%;
+}
+
+.card-horizontal {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-right: 40px;
+}
+.section-four .content {
+  flex: 1;
+}
+
+ .mobile-front {
+  background-image: url('../assets//home/section_4/mobile-front.png');
+  background-size: cover;
+  background-position: center;
+
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+ .boy-front {
+  background-image: url('../assets//home/section_4/boy-front.png');
+  background-size: cover;
+  background-position: center;
+
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+ .wallet-front {
+  background-image: url('../assets//home/section_4/wallet-front.png');
+  background-size: cover;
+  background-position: center;
+
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+ .target-front {
+  background-image: url('../assets//home/section_4/target-front.png');
+  background-size: cover;
+  background-position: center;
+
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
