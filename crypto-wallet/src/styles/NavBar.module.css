@@ -1,0 +1,98 @@
+.container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background: #00003C;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo {
+    margin-left: 10%;
+
+    align-self: center;
+
+    background-image: url('../assets/logo-dark.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 250px;
+    height: 50px;
+}
+
+.nav-menu {
+    display: flex;
+
+    align-self: center;
+    justify-content: right;
+
+    padding-left: 390px;
+    gap: 32px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-menu {
+    display: flex;
+
+    padding-left: 120px;
+    align-self: center;
+    justify-content: left;
+}
+
+.button-login {
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 19px;
+
+    padding: 12px 20px;
+    margin-left: 30px;
+    height: 56px;
+    width: 160px;
+
+    border: 2px solid #31B6FF;
+    border-radius: 12px;
+    background-color: #00003C;
+
+    color: #31B6FF;
+
+}
+
+.button-signup {
+    text-align: center;
+    font-weight: 700;
+    font-size: 19px;
+
+    padding: 12px 20px;
+    margin-left: 30px;
+    height: 56px;
+    width: 160px;
+
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #56E1F8 0%, #31B6FF 100%);
+    color: black;
+
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.button-login:hover {
+    background: linear-gradient(180deg, #56E1F8 0%, #31B6FF 60%);
+    color: #00003C;
+}
+
+.button-signup:hover {
+    background: linear-gradient(180deg, #56e0f8bb 0%, #31b7ffa9 60%);
+    color: #ffffff;
+}

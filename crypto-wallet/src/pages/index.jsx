@@ -4,8 +4,8 @@ import Image from "next/image";
 import { LogInButton, SignUpButton } from "../components/buttons";
 import Link from "next/link";
 import Home from "./home";
-
-// const inter = Inter({ subsets: ['latin'] })
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 export default function Index() {
   return (
@@ -17,7 +17,9 @@ export default function Index() {
         <link rel="icon" href="/logo.ico" />
       </Head>
       <main>
+        <NavBar />
         <Home />
+        <Footer />
       </main>
     </>
   );
