@@ -14,15 +14,15 @@ export default function SectionTwo() {
         <p>
           Mēs veidojam kriptoekonomiku – godīgāku, pieejamāku, efektīvāku un
           pārskatāmāku finanšu sistēmu, ko nodrošina kriptovalūta.
-          <br></br>
-          <br></br>
+          <br />
+          <br />
           Mēs sākām 2023. gadā ar radikālu ideju, ka ikvienam un jebkurā vietā
           vajadzētu būt iespējai viegli un droši nosūtīt un saņemt kriptovalūtu.
           Šodien mēs piedāvājam uzticamu un viegli lietojamu platformu, lai
           piekļūtu plašākai kriptoekonomikai.
         </p>
-        <br></br>
-          <br></br>
+        <br />
+        <br />
         <Link href={`/`} className={styles["read-more"]}>
           Lasīt vairāk <i className={icons["arrow"]}></i>
         </Link>

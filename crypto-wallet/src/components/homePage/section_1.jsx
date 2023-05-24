@@ -9,7 +9,7 @@ export default function SectionOne() {
         <h2>
           CryptoCabata ir vienkāršākā vieta, kur pirkt un pārdot kriptovalūtu.
           Reģistrējieties un sāciet jau šodien.
-        </h2>{" "}
+        </h2>
         <br />
         <div className={styles["form-wrapper"]}>
           <div className={styles["form-input-wrapper"]}>
