@@ -1,9 +1,126 @@
 .container {
-    background-color: yellow;
+    background-color: #00003C;
+    display: flex;
+    justify-content: flex-start;
+    
+    gap: 50px;
+    height: 40vh;
 }
 
-.container h2 {
+.logo {
+    margin-left: 10%;
+    margin-top: -17%;
+    
+    /* top: 0; */
 
-    font-size: 50px;
-    color: black;
+    align-self: center;
+
+    background-image: url('../assets/logo-dark.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 250px;
+    height: 50px;
 }
+
+.follow-us h2{
+    display: flex;
+    flex-direction: column;
+
+    align-self: center;
+    justify-content: left;
+
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.follow-us a {
+    text-decoration: none;
+    color: white;
+}
+
+.instagram {
+
+    display: inline-block;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+
+    margin-right: 16px;
+    background-image: url('../assets/icons/social_media/instagram.png');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.facebook {
+    display: inline-block;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+
+    margin-right: 16px;
+    background-image: url('../assets/icons/social_media/facebook.png');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.telegram {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    margin-right: 16px;
+    background-image: url('../assets/icons/social_media/telegram.png');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.twitter {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    margin-right: 16px;
+    background-image: url('../assets/icons/social_media/twitter.png');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.linkedin {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    margin-right: 16px;
+    background-image: url('../assets/icons/social_media/linkledin.png');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.policy h2 {
+    display: flex;
+    flex-direction: column;
+
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    
+}
+
+.policy a {
+    text-decoration: none;
+    color: white;
+}
+
+

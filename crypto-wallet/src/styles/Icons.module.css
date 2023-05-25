@@ -57,6 +57,32 @@
 
 /* Social media */
 
+.instagram {
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    margin-right: 16px;
+    background-image: url('../assets/icons/social_media/instagram.png');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.facebook {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    margin-right: 16px;
+    background-image: url('../assets/icons/social_media/facebook.png');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
 .telegram {
     display: inline-block;
     width: 40px;

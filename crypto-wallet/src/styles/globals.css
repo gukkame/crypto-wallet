@@ -37,7 +37,7 @@
 
 
  /* Prefered mode */
- @media (prefers-color-scheme: dark) {
+ @media (prefers-color-scheme: light) {
    html {
      color-scheme: dark;
    }
