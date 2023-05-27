@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100px;
+    height: 6.25rem;
     overflow: hidden;
     background: #00003C;
     display: flex;
@@ -18,8 +18,8 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    width: 250px;
-    height: 50px;
+    width: 15.625rem;
+    height: 3.125rem;
 }
 
 .nav-menu {
@@ -28,8 +28,8 @@
     align-self: center;
     justify-content: right;
 
-    padding-left: 390px;
-    gap: 32px;
+    padding-left: 24.375rem;
+    gap: 2rem;
 
     font-style: normal;
     font-weight: 400;
@@ -44,7 +44,7 @@
 .button-menu {
     display: flex;
 
-    padding-left: 120px;
+    padding-left: 7.5rem;
     align-self: center;
     justify-content: left;
 }
@@ -53,16 +53,17 @@
 
     text-align: center;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 1.18rem;
 
-    padding: 12px 20px;
-    margin-left: 30px;
-    height: 56px;
-    width: 160px;
+    padding: 0.75rem 1.25rem;
+    margin-left: 1.87rem;
+    height: 3.5rem;
+    width: 10rem;
 
-    border: 2px solid #31B6FF;
-    border-radius: 12px;
+    border: 0.125rem solid #31B6FF;
+    border-radius: 0.75rem;
     background-color: #00003C;
+    cursor: pointer;
 
     color: #31B6FF;
 
@@ -71,28 +72,30 @@
 .button-signup {
     text-align: center;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 1.18rem;
 
-    padding: 12px 20px;
-    margin-left: 30px;
-    height: 56px;
-    width: 160px;
+    padding: 0.75rem 1.25rem;
+    margin-left: 1.87rem;
+    height: 3.5rem;
+    width: 10rem;
 
     border: none;
-    border-radius: 12px;
-    background: linear-gradient(180deg, #56E1F8 0%, #31B6FF 100%);
-    color: black;
+    border-radius: 0.75rem;
+    background: linear-gradient(180deg, #56E1F8 0%, #31B6FF 100%);    color: #00003C;
 
     cursor: pointer;
     pointer-events: all;
 }
 
 .button-login:hover {
-    background: linear-gradient(180deg, #56E1F8 0%, #31B6FF 60%);
+    background: linear-gradient(180deg, #56E1F8 0%, #31B6FF 60%); 
     color: #00003C;
 }
 
 .button-signup:hover {
-    background: linear-gradient(180deg, #56e0f8bb 0%, #31b7ffa9 60%);
-    color: #ffffff;
+    border: 0.125rem solid #31B6FF;
+    border-radius: 0.75rem;
+    background: #00003C;
+
+    color: #31B6FF;
 }
