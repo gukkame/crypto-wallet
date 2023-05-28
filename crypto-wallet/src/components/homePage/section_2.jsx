@@ -7,7 +7,11 @@ export default function SectionTwo() {
   return (
     <section className={styles["section-two"]}>
       <div className={styles["element"]}>
-        <div className={styles["img-people"]}></div>
+        <img
+          src="../assets//home/section_2/people-avatars-zoom-call.png"
+          alt="People photo"
+          className={styles["img-people"]}
+        ></img>
       </div>
       <div className={`${styles.element} ${styles.container}`}>
         <h1>Par Mums</h1>
