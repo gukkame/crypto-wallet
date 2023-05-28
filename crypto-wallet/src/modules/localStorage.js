@@ -1,25 +1,46 @@
 //sets data into local storage
-export function setDataInLocalStorage(name, password, secret) {
-  localStorage.setItem(
-    name,
-    JSON.stringify({ password: password, secret: secret })
-  );
+
+// Save user in local storage
+export function saveUser(email, password, secret) {
+
+  const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
+
+  const newUser = {
+    email: email,
+    password: password,
+    secret: secret,
+    login: false,
+  };
+
+  const updatedUsers = [...storedUsers, newUser];
+  localStorage.setItem("users", JSON.stringify(updatedUsers));
 }
 
-//gets data from local storage
-export function getDataFromLocalStorage(name, password) {
-  const user = JSON.parse(localStorage.getItem(name));
+// Check if user is logged in
+export function isLoggedIn() {
+  const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
 
-  if (user == null) {
-    console.log("There are no registered users with this email");
-  } else if (user.password != password) {
-    console.log("wrong password");
-  } else if (user.password == password) {
-    console.log("you are in :)");
-    return true
+  for (const user of storedUsers) {
+    if (user.login === true) {
+      console.log("user is loged in!");
+      return true;
+    }
   }
-  return false
 }
 
-//remove data from local storage
-export function removeUserFromLocalStorage(value) {}
+// User authentication 
+export function checkLogIn(email, password) {
+  const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
+
+  for (const user of storedUsers) {
+    if (user.email === email && user.password === password) {
+      user.login = true;
+      localStorage.setItem("users", JSON.stringify(storedUsers));
+      return true;
+    }
+  }
+  return false;
+}
+
+// User loged out
+export function removeUserFromLocalStorage() {}

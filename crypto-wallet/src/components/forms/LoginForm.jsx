@@ -1,14 +1,16 @@
 import Link from "next/link";
 import {
-  getDataFromLocalStorage,
-  setDataInLocalStorage,
+  checkLogIn,
+  saveUser,
 } from "../../modules/localStorage";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 import styles from "@/styles/Auth.module.css";
 import icons from "@/styles/Icons.module.css";
 
 export default function LogInForm() {
+  const router = useRouter();
   const [state, setState] = useState({
     email: "",
     password: "",
@@ -28,7 +30,9 @@ export default function LogInForm() {
       console.log("Email/Password is missing");
       return;
     }
-    getDataFromLocalStorage(state.email, state.password);
+    if (checkLogIn(state.email, state.password)) {
+      router.push(`/${state.email}`);
+    }
   };
 
   return (

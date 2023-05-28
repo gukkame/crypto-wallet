@@ -1,4 +1,4 @@
-import { setDataInLocalStorage } from "@/modules/localStorage";
+import { saveUser } from "@/modules/localStorage";
 import { useState, useEffect } from "react";
 
 import styles from "@/styles/Auth.module.css";
@@ -62,7 +62,7 @@ export default function SignUpForm({ onData }) {
       setPassChecked(true);
       console.log("Passwords are equal, email ok and rules are approved");
     }
-    setDataInLocalStorage(state.email, state.password);
+    saveUser(state.email, state.password);
     console.log("User saved succesfully!");
     onData("secret");
   };
