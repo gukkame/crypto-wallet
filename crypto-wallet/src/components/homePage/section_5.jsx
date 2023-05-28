@@ -8,7 +8,11 @@ export default function SectionFive() {
         <h1 className={styles["title-left"]}>Jaunumi</h1>
         <div className={styles["title-right"]}>
           <p>Vairāk</p>
-          <i className={icons["arrow"]} />
+          <img
+            src="../assets/icons/arrow.png"
+            alt="Arrow img"
+            className={icons["arrow"]}
+          />
         </div>
       </div>
 

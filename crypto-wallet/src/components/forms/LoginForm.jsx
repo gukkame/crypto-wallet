@@ -1,7 +1,5 @@
 import Link from "next/link";
-import {
-  checkLogIn,
-} from "../../modules/localStorage";
+import { checkLogIn } from "../../modules/localStorage";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
@@ -38,7 +36,10 @@ export default function LogInForm() {
     <div className={styles["form-container"]}>
       <form onSubmit={handleSubmit}>
         <div className={styles["form-input-wrapper"]}>
-          <i className={icons["form-mail-icon"]}></i>
+          <img
+            src="../assets/icons/email.png"
+            className={icons["form-mail-icon"]}
+          />
           <input
             type="text"
             name="email"
@@ -50,7 +51,10 @@ export default function LogInForm() {
         </div>
 
         <div className={styles["form-input-wrapper"]}>
-          <i className={icons["form-locked-icon"]}></i>
+          <img
+            src="../assets/icons/locked.png"
+            className={icons["form-locked-icon"]}
+          />
           <input
             type="password"
             name="password"
@@ -59,7 +63,11 @@ export default function LogInForm() {
             onChange={handleInputChange}
             className={styles["form-input"]}
           />
-          <i className={icons["form-eye-icon"]}></i>
+
+          <img
+            src="../assets/icons/eye_closed.png"
+            className={icons["form-eye-icon"]}
+          />
         </div>
         <p> Aizmirsāt paroli?</p>
 

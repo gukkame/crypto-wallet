@@ -24,7 +24,12 @@ export default function SectionTwo() {
         <br />
         <br />
         <Link href={`/`} className={styles["read-more"]}>
-          Lasīt vairāk <i className={icons["arrow"]}></i>
+          Lasīt vairāk
+          <img
+            src="../assets/icons/arrow.png"
+            alt="Arrow img"
+            className={icons["arrow"]}
+          />
         </Link>
       </div>
     </section>

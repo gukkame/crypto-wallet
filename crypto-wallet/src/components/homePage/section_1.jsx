@@ -14,7 +14,10 @@ export default function SectionOne() {
         <br />
         <div className={styles["form-wrapper"]}>
           <div className={styles["form-input-wrapper"]}>
-            <i className={icons["form-mail-icon"]}></i>
+            <img
+              src="../assets/icons/email.png"
+              className={icons["form-mail-icon"]}
+            />
             <input
               type="text"
               name="email"

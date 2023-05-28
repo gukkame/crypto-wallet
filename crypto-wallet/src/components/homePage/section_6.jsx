@@ -4,17 +4,19 @@ import icons from "@/styles/Icons.module.css";
 export default function SectionSix() {
   return (
     <section className={styles["section-blog"]}>
-        
       <div className={styles["title-container"]}>
         <h1 className={styles["title-left"]}>Apmācības</h1>
         <div className={styles["title-right"]}>
           <p>Vairāk</p>
-          <i className={icons["arrow"]} />
+          <img
+            src="../assets/icons/arrow.png"
+            alt="Arrow img"
+            className={icons["arrow"]}
+          />
         </div>
       </div>
 
       <div className={styles["container-flex"]}>
-        
         <div className={styles["field2"]}>
           <div className={styles["card-gradiant"]}>
             <div className={styles["imageWrapper"]}>
