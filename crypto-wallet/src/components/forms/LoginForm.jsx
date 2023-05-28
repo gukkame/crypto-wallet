@@ -1,7 +1,6 @@
 import Link from "next/link";
 import {
   checkLogIn,
-  saveUser,
 } from "../../modules/localStorage";
 import { useState } from "react";
 import { useRouter } from "next/router";

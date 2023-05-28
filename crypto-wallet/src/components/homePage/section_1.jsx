@@ -1,5 +1,6 @@
 import styles from "@/styles/Home.module.css";
 import icons from "@/styles/Icons.module.css";
+import Link from "next/link";
 
 export default function SectionOne() {
   return (
@@ -28,12 +29,33 @@ export default function SectionOne() {
         <br />
         <h2>Seko mums</h2>
         <br />
-        <i className={icons["telegram"]}></i>
-        <i className={icons["twitter"]}></i>
-        <i className={icons["linkedin"]}></i>
+        <div className={styles["element"]}>
+          <Link href="https://telegram.org/">
+            <img
+              src="../assets/icons/social_media/telegram.png"
+              className={icons["telegram"]}
+            />
+          </Link>
+          <Link href="https://twitter.com/">
+            <img
+              src="../assets/icons/social_media/twitter.png"
+              className={icons["twitter"]}
+            />
+          </Link>
+          <Link href="https://www.linkedin.com/">
+            <img
+              src="../assets/icons/social_media/linkedin.png"
+              className={icons["linkedin"]}
+            />
+          </Link>
+        </div>
       </div>
       <div className={styles["element"]}>
-        <div className={styles["img-coins"]}></div>
+        <img
+          src="../assets/home/section_1/coins.png"
+          alt="Coin image"
+          className={styles["img-coins"]}
+        ></img>
       </div>
     </section>
   );
