@@ -111,7 +111,7 @@
   padding: 3rem 8rem 3rem 0;
   display: flex;
   text-align: left;
-  background-image: url('../assets//home/background.png');
+  background-image: url('../../public/assets/home/background.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -148,7 +148,8 @@
   background: #00003C;
   text-align: left;
 }
-.section-three h1{
+
+.section-three h1 {
   font-size: 2.5rem;
   line-height: 3.4375rem;
   margin-bottom: 2.5rem;
@@ -194,7 +195,7 @@
   text-align: left;
   padding: 0 8rem;
 
-  background-image: url('../assets//home/background.png');
+  background-image: url('../../public/assets/home/background.png');
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -370,7 +371,7 @@
 /* Section 6 */
 
 .image-blog-1 {
-  
+
   max-width: 44rem;
   width: 100%;
   height: 21.5rem;
@@ -379,7 +380,7 @@
 }
 
 .image-blog-2 {
- 
+
   max-width: 44rem;
   width: 100%;
   height: 21.5rem;
