@@ -7,7 +7,11 @@ export default function SectionTwo() {
   return (
     <section className={styles["section-two"]}>
       <div className={styles["element"]}>
-        <div className={styles["img-people"]}></div>
+        <img
+          src="../assets//home/section_2/people-avatars-zoom-call.png"
+          alt="People photo"
+          className={styles["img-people"]}
+        ></img>
       </div>
       <div className={`${styles.element} ${styles.container}`}>
         <h1>Par Mums</h1>
@@ -24,7 +28,12 @@ export default function SectionTwo() {
         <br />
         <br />
         <Link href={`/`} className={styles["read-more"]}>
-          Lasīt vairāk <i className={icons["arrow"]}></i>
+          Lasīt vairāk
+          <img
+            src="../assets/icons/arrow.png"
+            alt="Arrow img"
+            className={icons["arrow"]}
+          />
         </Link>
       </div>
     </section>
