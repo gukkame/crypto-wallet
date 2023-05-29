@@ -1,6 +1,7 @@
 /* Section 1 */
 .section-one {
-  height: 43.125rem;
+  padding: 3rem 8rem 3rem 8rem;
+  height: auto;
   background: #00003C;
   display: flex;
   text-align: left;
@@ -12,9 +13,6 @@
 }
 
 .section-one .container {
-  margin-left: 10%;
-  margin-top: 10rem;
-
   flex-direction: column;
 
   text-align: left;
@@ -110,6 +108,7 @@
 
 /* Section 2 */
 .section-two {
+  padding: 3rem 8rem 3rem 0;
   display: flex;
   text-align: left;
   background-image: url('../assets//home/background.png');
@@ -126,7 +125,7 @@
 
 .section-two .container {
   margin: auto;
-  padding: 3rem 4rem 3rem 0;
+  padding: 3rem 0 3rem 0;
 
   flex-direction: column;
 
@@ -193,6 +192,7 @@
 .section-four {
   display: flex;
   text-align: left;
+  padding: 0 8rem;
 
   background-image: url('../assets//home/background.png');
   background-size: cover;
@@ -280,7 +280,7 @@
 
 /* Section 5 */
 .section-blog {
-  padding: 3.75rem 16% 0 10rem;
+  padding: 3.75rem 10rem 0 10rem;
   height: 32.5rem;
   background: #00003C;
   text-align: left;
@@ -342,7 +342,6 @@
 
 .image-news-1 {
   border-radius: 0.625rem;
-
 
   max-width: 44rem;
   width: 100%;

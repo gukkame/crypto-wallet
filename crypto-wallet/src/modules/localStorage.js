@@ -26,6 +26,7 @@ export function isLoggedIn() {
       return true;
     }
   }
+  return false;
 }
 
 // User authentication 
