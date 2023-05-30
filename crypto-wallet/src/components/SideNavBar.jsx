@@ -1,28 +1,22 @@
-import styles from "@/styles/SideNav.module.css";
 import { useState } from "react";
+import Link from "next/link";
+
+import styles from "@/styles/SideNav.module.css";
+import auth from "@/styles/Auth.module.css";
+import navBar from "@/styles/NavBar.module.css";
 
 export default function SideNavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-
-  const openNav = () => {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    setIsNavOpen(true);
-  };
-
-  const closeNav = () => {
-    document.getElementById("mySidenav").style.width = "50px";
-    document.getElementById("main").style.marginLeft = "50px";
-    setIsNavOpen(false);
-  };
-  const openCloseNav = () => {
+  
+  const openCloseNav = (event) => {
+    event.preventDefault();
     if (isNavOpen) {
-      document.getElementById("mySidenav").style.width = "50px";
-      document.getElementById("main").style.marginLeft = "50px";
+      document.getElementById("mySidenav").style.width = "3.125rem";
+      document.getElementById("main").style.marginLeft = "3.125rem";
       setIsNavOpen(false);
     } else {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("mySidenav").style.width = "14rem";
+      document.getElementById("main").style.marginLeft = "14rem";
       setIsNavOpen(true);
     }
   };
@@ -33,20 +27,87 @@ export default function SideNavBar() {
         id="mySidenav"
         className={isNavOpen ? styles["sidenav"] : styles["sidenavClosed"]}
       >
-        <a
-          href="javascript:void(0)"
-          className={styles["closebtn"]}
-          onClick={openCloseNav}
-        >
+        <a className={styles["closebtn"]} onClick={openCloseNav}>
           &times;
         </a>
-        <br></br>
-        <a href="#"><img src="../"></img>About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <section>
+          <a href="#">
+            <div className={styles["link"]}>
+              <img
+                src="../assets/icons/main_page/home_icon.png"
+                alt="home"
+                className={styles["icons"]}
+              ></img>
+              <h3>Galvenā</h3>
+            </div>
+          </a>
+          <a href="#">
+            <div className={styles["link"]}>
+              <img
+                src="../assets/icons/main_page/graph.png"
+                alt="graph"
+                className={styles["icons"]}
+              ></img>
+              <h3>Mans konts</h3>
+            </div>
+          </a>
+          <a href="#">
+            <div className={styles["link"]}>
+              <img
+                src="../assets/icons/main_page/clock.png"
+                alt="clock"
+                className={styles["icons"]}
+              ></img>
+              <h3>Vēsture</h3>
+            </div>
+          </a>
+          <a href="#">
+            <div className={styles["link"]}>
+              <img
+                src="../assets/icons/main_page/settings.png"
+                alt="setting"
+                className={styles["icons"]}
+              ></img>
+              <h3>Iestatījumi</h3>
+            </div>
+          </a>{" "}
+        </section>
+        <section>
+          <a href="#">
+            <div className={styles["link"]}>
+              <img
+                src="../assets/icons/main_page/clock.png"
+                alt="clock"
+                className={styles["icons"]}
+              ></img>
+              <h3>Mācības</h3>
+            </div>
+          </a>
+          <a href="#">
+            <div className={styles["link"]}>
+              <img
+                src="../assets/icons/main_page/clock.png"
+                alt="clock"
+                className={styles["icons"]}
+              ></img>
+              <h3>Par Mums</h3>
+            </div>
+          </a>
+          <a href="#">
+            <div className={styles["link"]}>
+              <img
+                src="../assets/icons/main_page/clock.png"
+                alt="clock"
+                className={styles["icons"]}
+              ></img>
+              <h3>Jaunumi</h3>
+            </div>
+          </a>
+          <a href="/">
+            <button className={navBar["button-login"]}>Iziet</button>
+          </a>
+        </section>
       </div>
-      {/* <button onClick={openNav}>open</button>{" "} */}
     </>
   );
 }
