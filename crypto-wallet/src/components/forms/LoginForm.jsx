@@ -1,14 +1,13 @@
 import Link from "next/link";
-import {
-  getDataFromLocalStorage,
-  setDataInLocalStorage,
-} from "../../modules/localStorage";
+import { checkLogIn } from "../../modules/localStorage";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 import styles from "@/styles/Auth.module.css";
 import icons from "@/styles/Icons.module.css";
 
 export default function LogInForm() {
+  const router = useRouter();
   const [state, setState] = useState({
     email: "",
     password: "",
@@ -28,14 +27,19 @@ export default function LogInForm() {
       console.log("Email/Password is missing");
       return;
     }
-    getDataFromLocalStorage(state.email, state.password);
+    if (checkLogIn(state.email, state.password)) {
+      router.push(`/${state.email}`);
+    }
   };
 
   return (
     <div className={styles["form-container"]}>
       <form onSubmit={handleSubmit}>
         <div className={styles["form-input-wrapper"]}>
-          <i className={icons["form-mail-icon"]}></i>
+          <img
+            src="../assets/icons/email.png"
+            className={icons["form-mail-icon"]}
+          />
           <input
             type="text"
             name="email"
@@ -47,7 +51,10 @@ export default function LogInForm() {
         </div>
 
         <div className={styles["form-input-wrapper"]}>
-          <i className={icons["form-locked-icon"]}></i>
+          <img
+            src="../assets/icons/locked.png"
+            className={icons["form-locked-icon"]}
+          />
           <input
             type="password"
             name="password"
@@ -56,7 +63,11 @@ export default function LogInForm() {
             onChange={handleInputChange}
             className={styles["form-input"]}
           />
-          <i className={icons["form-eye-icon"]}></i>
+
+          <img
+            src="../assets/icons/eye_closed.png"
+            className={icons["form-eye-icon"]}
+          />
         </div>
         <p> Aizmirsāt paroli?</p>
 

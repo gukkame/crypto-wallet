@@ -4,6 +4,7 @@ import TestSecretForm from "@/components/forms/TestSecretForm";
 import EndOfSignUp from "@/components/EndOfSignUp";
 import styles from "@/styles/Auth.module.css";
 import { useState } from "react";
+import NavBar from "../components/NavBar";
 
 export default function SignUpPage() {
   const [currentPage, setCurrentPage] = useState("register");
@@ -24,5 +25,10 @@ export default function SignUpPage() {
     content = <EndOfSignUp />;
   }
 
-  return <>{content}</>;
+  return (
+    <>
+      <NavBar />
+      {content}
+    </>
+  );
 }

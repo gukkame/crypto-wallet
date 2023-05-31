@@ -1,4 +1,123 @@
 .container {
+    height: 6.25rem;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem;
+    position: sticky;
+    
+
+    top: 0;
+    background: #00003C;
+    z-index: 4;
+    gap: 2rem;
+
+}
+
+.container-auth {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 15rem 0 10rem;
+
+    top: 0;
+    width: 100%;
+    height: 6.25rem;
+
+    position: fixed;
+    z-index: 1;
+
+}
+
+.logo {
+    flex: 1;
+    align-self: center;
+    justify-content: flex-end;
+
+    max-width: 15.5rem;
+    height: 3.06rem;
+}
+
+.nav-menu {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+
+    align-self: center;
+    justify-content: flex-end;
+
+    gap: 2rem;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.nav-menu a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.button-menu {
+    flex: 1;
+    display: flex;
+
+    align-self: center;
+    justify-content: flex-end;
+}
+
+.button-login {
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.18rem;
+
+
+
+    height: 3.5rem;
+    width: 10rem;
+
+    border: 0.125rem solid #31B6FF;
+    border-radius: 0.75rem;
+    background-color: #00003C;
+    cursor: pointer;
+
+    color: #31B6FF;
+
+}
+
+.button-signup {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.18rem;
+
+
+    margin-left: 1.87rem;
+    height: 3.5rem;
+    width: 10rem;
+
+    border: none;
+    border-radius: 0.75rem;
+    background: linear-gradient(180deg, #56E1F8 0%, #31B6FF 100%);
+    color: #00003C;
+
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.button-login:hover {
+    background: linear-gradient(180deg, #56E1F8 0%, #31B6FF 60%);
+    color: #00003C;
+}
+
+.button-signup:hover {
+    border: 0.125rem solid #31B6FF;
+    border-radius: 0.75rem;
+    background: #00003C;
+
+    color: #31B6FF;
+}.container {
     position: fixed;
     top: 0;
     width: 100%;
@@ -174,4 +293,5 @@
 
 
   }
+
   

@@ -1,38 +1,39 @@
 .container {
-    background-color: #00003C;
+    background-color: #00003C;  
     display: flex;
-    justify-content: flex-start;
-    
-    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 3.125rem;
     height: 40vh;
 }
 
 .logo {
-    margin-left: 10%;
-    margin-top: -17%;
-    
+    /* margin-left: 10%;
+    margin-top: -17%; */
+
     /* top: 0; */
 
-    align-self: center;
+    /* align-self: center; */
 
     background-image: url('../assets/logo-dark.png');
     background-size: cover;
     background-repeat: no-repeat;
 
-    width: 250px;
-    height: 50px;
+    width: 15.625rem;
+    height: 3.125rem;
 }
 
 .follow-us h2{
     display: flex;
     flex-direction: column;
 
-    align-self: center;
     justify-content: left;
 
     font-style: normal;
     font-weight: 400;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
     font-size: 1.2rem;
 }
 
@@ -44,11 +45,10 @@
 .instagram {
 
     display: inline-block;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 
-    margin-right: 16px;
+    margin-right: 1rem;
     background-image: url('../assets/icons/social_media/instagram.png');
 
     background-repeat: no-repeat;
@@ -57,11 +57,10 @@
 
 .facebook {
     display: inline-block;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 
-    margin-right: 16px;
+    margin-right: 1rem;
     background-image: url('../assets/icons/social_media/facebook.png');
 
     background-repeat: no-repeat;
@@ -71,10 +70,10 @@
 
 .telegram {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 
-    margin-right: 16px;
+    margin-right: 1rem;
     background-image: url('../assets/icons/social_media/telegram.png');
 
     background-repeat: no-repeat;
@@ -84,10 +83,10 @@
 
 .twitter {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 
-    margin-right: 16px;
+    margin-right: 1rem;
     background-image: url('../assets/icons/social_media/twitter.png');
 
     background-repeat: no-repeat;
@@ -96,10 +95,10 @@
 
 .linkedin {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 
-    margin-right: 16px;
+    margin-right: 1rem;
     background-image: url('../assets/icons/social_media/linkledin.png');
 
     background-repeat: no-repeat;
@@ -114,8 +113,8 @@
     font-style: normal;
     font-weight: 200;
     font-size: 1.2rem;
-    padding-bottom: 10px;
-    
+    padding-bottom: 0.625rem;
+
 }
 
 .policy a {
@@ -123,4 +122,10 @@
     color: white;
 }
 
-
+.autortiesibas{
+    display: flex;
+    flex-basis: 100%;
+    /* justify-content: center; */
+    margin-left: 18%;
+    
+}

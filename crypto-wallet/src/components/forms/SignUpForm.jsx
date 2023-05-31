@@ -1,4 +1,4 @@
-import { setDataInLocalStorage } from "@/modules/localStorage";
+import { saveUser } from "@/modules/localStorage";
 import { useState, useEffect } from "react";
 
 import styles from "@/styles/Auth.module.css";
@@ -62,7 +62,7 @@ export default function SignUpForm({ onData }) {
       setPassChecked(true);
       console.log("Passwords are equal, email ok and rules are approved");
     }
-    setDataInLocalStorage(state.email, state.password);
+    saveUser(state.email, state.password);
     console.log("User saved succesfully!");
     onData("secret");
   };
@@ -81,7 +81,10 @@ export default function SignUpForm({ onData }) {
         <div className={styles["form-container"]}>
           <form onSubmit={handleSubmit}>
             <div className={styles["form-input-wrapper"]}>
-              <i className={icons["form-mail-icon"]}></i>
+              <img
+                src="../assets/icons/email.png"
+                className={icons["form-mail-icon"]}
+              />
               <input
                 type="email"
                 name="email"
@@ -99,7 +102,10 @@ export default function SignUpForm({ onData }) {
                   : styles["form-input-wrapper-false"]
               }
             >
-              <i className={icons["form-locked-icon"]}></i>
+              <img
+                src="../assets/icons/locked.png"
+                className={icons["form-locked-icon"]}
+              />
               <input
                 type="password"
                 name="password"
@@ -108,7 +114,10 @@ export default function SignUpForm({ onData }) {
                 onChange={handleInputChange}
                 className={styles["form-input"]}
               />
-              <i className={icons["form-eye-icon"]}></i>
+              <img
+                src="../assets/icons/eye_closed.png"
+                className={icons["form-eye-icon"]}
+              />
             </div>
 
             <div
@@ -118,7 +127,10 @@ export default function SignUpForm({ onData }) {
                   : styles["form-input-wrapper-false"]
               }
             >
-              <i className={icons["form-locked-icon"]}></i>
+              <img
+                src="../assets/icons/locked.png"
+                className={icons["form-locked-icon"]}
+              />
               <input
                 type="password"
                 name="passwordRepeat"
@@ -127,7 +139,10 @@ export default function SignUpForm({ onData }) {
                 onChange={handleInputChange}
                 className={styles["form-input"]}
               />
-              <i className={icons["form-eye-icon"]}></i>
+              <img
+                src="../assets/icons/eye_closed.png"
+                className={icons["form-eye-icon"]}
+              />
             </div>
 
             <button
@@ -157,9 +172,6 @@ export default function SignUpForm({ onData }) {
             <Link href={`/terms-conditions`}> Crypto Cabata noteikumiem </Link>
           </p>
         </div>
-
-
-        
       </div>
     </>
   );

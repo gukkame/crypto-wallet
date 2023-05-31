@@ -1,38 +1,24 @@
 /* Form Icons */
 .form-mail-icon {
     display: inline-block;
-    width: 16px;
-    height: 16px;
-
-    margin: 0 7px 0 15px;
-    background-image: url('../assets/icons/email.png');
-
-    background-repeat: no-repeat;
-    background-size: contain;
+    max-width: 1.2rem;
+    height: auto;
+    margin: 0 0.44rem 0 0.94rem;
 }
 
 .form-eye-icon {
     display: inline-block;
-    width: 18px;
-    height: 18px;
-
-    margin: 4px 7px 0 15px;
-    background-image: url('../assets/icons/eye_closed.png');
-
-    background-repeat: no-repeat;
-    background-size: contain;
+    max-width: 1.3rem;
+    height: auto;
+    margin: auto;
 }
 
 .form-locked-icon {
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    max-width: 1.125rem;
+    height: auto;
 
-    margin: 0px 7px 0 15px;
-    background-image: url('../assets/icons/locked.png');
-
-    background-repeat: no-repeat;
-    background-size: contain;
+    margin: 0rem 0.44rem 0 0.94rem;
 }
 
 
@@ -40,18 +26,15 @@
 
 /* Home page icons */
 .arrow {
-     display: inline-block;
+
     justify-content: center;
-   /* text-align: center;  */
-    width: 21px;
-    height: 21px;
-    padding: 0px 0 0 0;
+    align-items: end;
 
-    /* margin: 0px 12px 0 12px; */
-    background-image: url('../assets/icons/arrow.png');
-
-    /* background-repeat: no-repeat;
-    background-size: contain; */
+    /* text-align: center;  */
+    width: 1.3125rem;
+    max-height: 1.3125rem;
+    margin: 0.0rem 0.75rem 0 0.75rem;
+    
 }
 
 
@@ -60,62 +43,43 @@
 .instagram {
 
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 
-    margin-right: 16px;
-    background-image: url('../assets/icons/social_media/instagram.png');
-
-    background-repeat: no-repeat;
-    background-size: contain;
+    margin-right: 1rem;
 }
 
 .facebook {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 
-    margin-right: 16px;
-    background-image: url('../assets/icons/social_media/facebook.png');
-
-    background-repeat: no-repeat;
-    background-size: contain;
-
+    margin-right: 1rem;
 }
 
 .telegram {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 
-    margin-right: 16px;
-    background-image: url('../assets/icons/social_media/telegram.png');
+    margin-right: 1rem;
 
-    background-repeat: no-repeat;
-    background-size: contain;
 
 }
 
 .twitter {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 
-    margin-right: 16px;
-    background-image: url('../assets/icons/social_media/twitter.png');
+    margin-right: 1rem;
 
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .linkedin {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 
-    margin-right: 16px;
-    background-image: url('../assets/icons/social_media/linkledin.png');
-
-    background-repeat: no-repeat;
-    background-size: contain;
+    margin-right: 1rem;
 }
