@@ -2,18 +2,15 @@
     background-color: #00003C;
     display: flex;
     justify-content: flex-start;
+    align-items: flex-start;
 
+    margin-top: 7rem;
     gap: 3.125rem;
     height: 40vh;
 }
 
 .logo {
     margin-left: 10%;
-    margin-top: -17%;
-
-    /* top: 0; */
-
-    align-self: center;
 
     width: 15.625rem;
     height: 3.125rem;

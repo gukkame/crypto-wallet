@@ -12,6 +12,10 @@
   display: flex;
 }
 
+.element a {
+  margin-right: 1rem;
+}
+
 .section-one .container {
   flex-direction: column;
 
@@ -295,7 +299,7 @@
 .title-left {
   font-size: 2.5rem;
   line-height: 3.4375rem;
-  margin-bottom: 2.5rem;
+  /* margin-bottom: 2.5rem; */
 }
 
 .title-right {
@@ -304,6 +308,7 @@
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.6875rem;
+  align-items: center;
 
   color: #FFFFFF;
 }
@@ -312,6 +317,7 @@
   display: flex;
   justify-content: center;
   gap: 1.875rem;
+  margin-top: 2.5rem;
 }
 
 
@@ -371,15 +377,6 @@
 /* Section 6 */
 
 .image-blog-1 {
-
-  max-width: 44rem;
-  width: 100%;
-  height: 21.5rem;
-
-  border-radius: 0.625rem;
-}
-
-.image-blog-2 {
 
   max-width: 44rem;
   width: 100%;

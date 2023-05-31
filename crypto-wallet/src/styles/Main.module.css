@@ -98,3 +98,7 @@
     background: linear-gradient(180deg, #56E1F8 0%, #31B6FF 60%);
     color: #00003C;
 }
+
+.section-news{
+    margin: 3rem 0;
+}

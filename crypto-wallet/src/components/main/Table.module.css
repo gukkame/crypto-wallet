@@ -1,5 +1,6 @@
 .container {
-    margin: 2rem 0rem;
+    /* margin: 2rem 0rem; */
+    margin-bottom: 2rem ;
     width: 100%;
     border-collapse: separate;
     text-align: left;

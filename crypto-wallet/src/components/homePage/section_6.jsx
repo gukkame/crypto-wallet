@@ -18,7 +18,7 @@ export default function SectionSix() {
 
       <div className={styles["container-flex"]}>
         <div className={styles["field2"]}>
-          <div className={styles["card-gradiant"]}>
+      
             <div className={styles["imageWrapper"]}>
               <img
                 className={styles["image-blog-1"]}
@@ -35,13 +35,13 @@ export default function SectionSix() {
                 </p>
               </div>
             </div>
-          </div>
+   
         </div>
         <div className={styles["field3"]}>
-          <div className={styles["card-gradiant"]}>
+      
             <div className={styles["imageWrapper"]}>
             <img
-                className={styles["image-blog-2"]}
+                className={styles["image-blog-1"]}
                 src="../assets/home/section_6/study_blog_2.png"
                 alt="study_blog_2"
               />
@@ -53,7 +53,7 @@ export default function SectionSix() {
                   sākot no ieguldīšanas līdz kreditēšanai
                 </p>
               </div>
-            </div>
+         
           </div>
         </div>
       </div>
