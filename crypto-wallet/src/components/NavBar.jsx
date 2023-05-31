@@ -1,7 +1,6 @@
 import styles from "@/styles/NavBar.module.css";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import BurgerMenu from "./BurgerMenu";
 import { isLoggedIn } from "../modules/localStorage";
 
 export default function NavBar() {

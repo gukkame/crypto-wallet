@@ -2,7 +2,6 @@ import { useState } from "react";
 import Link from "next/link";
 
 import styles from "@/styles/SideNav.module.css";
-import auth from "@/styles/Auth.module.css";
 import navBar from "@/styles/NavBar.module.css";
 
 export default function SideNavBar() {

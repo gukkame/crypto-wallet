@@ -1,0 +1,57 @@
+.container {
+    margin: 2rem 0rem;
+    width: 100%;
+    border-collapse: separate;
+    text-align: left;
+    border-spacing: 0 1.2rem;
+    height: 100%;
+}
+
+.container td,
+.container th {
+    padding: 0.9rem 4rem;
+
+}
+
+.container td:first-child {
+    border-radius: 0.8rem 0 0 0.8rem;
+    background: #191950;
+}
+
+.container tr td:nth-child(2),
+.container tr td:nth-child(3),
+.container tr td:nth-child(4) {
+    background: #191950;
+}
+
+.container td:last-child {
+    border-radius: 0 0.8rem 0.8rem 0;
+    background: #191950;
+}
+
+
+.imageCell {
+    display: flex;
+    align-items: center;
+    grid-gap: 1.5rem;
+    height: 100%;
+}
+
+.green {
+    color: #88FE8D;
+}
+
+.red {
+    color: #FF7272;
+}
+
+.blue {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 27px;
+    color: #41bcff;
+}
+
+.details {
+    margin-left: 0.3rem;
+}

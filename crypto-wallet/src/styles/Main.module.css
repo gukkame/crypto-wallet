@@ -1,0 +1,100 @@
+.main {
+    transition: margin-left .5s;
+    /* padding-left: 8.12rem;
+    padding-top: 4.5rem; */
+    padding: 4.5rem 8rem;
+}
+
+.main h2 {
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin: 3.5rem 0rem;
+    border-radius: 0.75rem;
+}
+
+.balance-frame {
+    width: 822px;
+    height: 287px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    background-image: url('../../public/assets/bal-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.current-balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    font-weight: 700;
+    font-size: 32px;
+
+    width: 13rem;
+    height: 4.3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.buttons {
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    gap: 8px;
+}
+
+.buttons button {
+    font-weight: 700;
+    font-size: 1.18rem;
+    text-align: center;
+
+    width: 10rem;
+    height: 3.3rem;
+
+    border: none;
+    border-radius: 0.75rem;
+    background: linear-gradient(180deg, #56E1F8 0%, #31B6FF 100%);
+    color: #00003C;
+
+    cursor: pointer;
+    pointer-events: all;
+
+}
+
+.buttons button:hover {
+    border: 0.125rem solid #31B6FF;
+    border-radius: 0.75rem;
+    background: #00003C;
+
+    color: #31B6FF;
+}
+
+.buttons button:nth-child(2) {
+    border: 0.125rem solid #31B6FF;
+    border-radius: 0.75rem;
+    background-color: #00003c00;
+    cursor: pointer;
+    background: #31b7ff00;
+    color: #31B6FF;
+}
+
+.buttons button:nth-child(2):hover {
+    background: linear-gradient(180deg, #56E1F8 0%, #31B6FF 60%);
+    color: #00003C;
+}

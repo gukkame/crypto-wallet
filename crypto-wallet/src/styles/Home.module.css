@@ -317,7 +317,7 @@
 
 
 .imageWrapper {
-
+  overflow: hidden;
   position: relative;
 }
 

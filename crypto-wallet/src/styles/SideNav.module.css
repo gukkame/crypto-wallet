@@ -61,7 +61,7 @@
 
     height: 100%;
     width: 3.1rem;
-    position: absolute;
+    position: fixed;
 
     top: 0;
     left: 0;
@@ -98,13 +98,7 @@
     width: 1.4rem;
 }
 
-.main {
-    transition: margin-left .5s;
-    padding-left: 8.12rem;
-    padding-top: 4.5rem;
-}
-
 
 @media screen and (max-height: 1100px) {
-   /* todo make mobile friendly */
+    /* todo make mobile friendly */
 }
