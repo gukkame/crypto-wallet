@@ -3,6 +3,7 @@ import SideNavBar from "../components/SideNavBar";
 import PortfTable from "../components/main/PortfolioTable";
 import PriceTable from "../components/main/PriceTable";
 import HistoryTable from "../components/main/HistoryTable";
+import PorfolioBalance from "../components/main/PorfolioBalance";
 import styles from "@/styles/Main.module.css";
 import home from "@/styles/Home.module.css";
 import icons from "@/styles/Icons.module.css";
@@ -12,6 +13,7 @@ export default function Main() {
   return (
     <>
       <SideNavBar />
+
       <div id="main" className={styles["main"]}>
         <h2>Atlikums</h2>
         <div className={styles["wrapper"]}>
@@ -24,11 +26,8 @@ export default function Main() {
               <button>Pārdot</button>
             </div>
           </div>
-          <div>
-            <h2>
-              <i> &nbsp;Graph</i>
-            </h2>
-          </div>
+
+          <PorfolioBalance />
         </div>
 
         <h2>Portfolio</h2>
