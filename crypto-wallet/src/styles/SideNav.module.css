@@ -1,63 +1,104 @@
 /* The side navigation menu */
-.sidenav {
-    height: 100%;
-    /* 100% Full-height */
-    width: 0;
-    /* 0 width - change this with JavaScript */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    /* Stay at the top */
-    left: 0;
-    background-color: #111;
-    /* Black*/
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 60px;
-    /* Place content 60px from the top */
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidenav */
+.sidenav section,
+.sidenavClosed section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    gap: 20px;
+    justify-self: center;
 }
 
-/* The navigation menu links */
+.sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #191950;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav .closebtn {
+    position: relative;
+    display: flex;
+
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 1rem;
+    font-size: 1.68rem;
+}
+
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
+    padding: 0.5rem 0.5rem 0 2rem;
+    height: 3.1rem;
     transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav h3 {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.1rem;
+
+    color: #ecececbb;
+}
+
+.sidenav h3:hover {
     color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
+.sidenav button {
+    height: 3rem;
+    transition: 0.3s;
+}
+
+/* Closed Side Nav bar */
+.sidenavClosed {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+
+    height: 100%;
+    width: 3.1rem;
+    position: fixed;
+
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    left: 0;
+    background: #191950;
+    overflow-x: hidden;
+    padding-top: 3.4rem;
+    transition: 0.5s;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
+.sidenavClosed h3,
+.sidenavClosed button {
+    display: none;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
+.sidenavClosed .closebtn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
-    .sidenav a {
-        font-size: 18px;
-    }
+    font-size: 1.8rem;
+}
+
+.link {
+    height: 1.6rem;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+.icons {
+    margin: auto;
+    height: auto;
+    width: 1.4rem;
+}
+
+
+@media screen and (max-height: 1100px) {
+    /* todo make mobile friendly */
 }

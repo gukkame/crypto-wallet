@@ -40,43 +40,8 @@
 
 /* Social media */
 
-.instagram {
+.social-media-icon {
 
-    display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
-
-    margin-right: 1rem;
-}
-
-.facebook {
-    display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
-
-    margin-right: 1rem;
-}
-
-.telegram {
-    display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
-
-    margin-right: 1rem;
-
-
-}
-
-.twitter {
-    display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
-
-    margin-right: 1rem;
-
-}
-
-.linkedin {
     display: inline-block;
     width: 2.5rem;
     height: 2.5rem;

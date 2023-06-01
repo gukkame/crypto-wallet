@@ -13,7 +13,7 @@ export default function LogInPage() {
         <p>
           Nav sava konta? <Link href={`/signup`}>Izveido jaunu </Link>
         </p>
-      </div>{" "}
+      </div>
     </>
   );
 }
