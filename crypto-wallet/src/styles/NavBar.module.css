@@ -6,6 +6,7 @@
     padding: 0 10rem;
     position: sticky;
     
+
     top: 0;
     background: #00003C;
     z-index: 4;
@@ -116,4 +117,181 @@
     background: #00003C;
 
     color: #31B6FF;
+}.container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%; 
+    padding-top: 10px;
+    overflow: hidden;
+    background: #00003C;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
 }
+
+.logo {
+    flex: 0 0 auto;
+    margin-left: 10%;
+
+    align-self: center;
+
+    background-image: url('../assets/logo-dark.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 250px;
+    height: 50px;
+}
+
+.nav-menu {
+    display: flex;
+    flex: 0 0 auto;
+
+    align-self: center;
+    justify-content: right;
+
+    padding-left: 250px;
+    gap: 32px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu h2:hover {
+    background-color: #6d76f7;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.button-menu {
+    display: flex;
+    flex: 0 0 auto;
+
+    padding-left: 20px;
+    align-self: center;
+    justify-content: left;
+}
+
+.button-login {
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 19px;
+
+    padding: 12px 20px;
+    margin-left: 30px;
+    height: 56px;
+    width: 160px;
+
+    border: 2px solid #31B6FF;
+    border-radius: 12px;
+    background-color: #00003C;
+
+    color: #31B6FF;
+
+}
+
+.button-signup {
+    text-align: center;
+    font-weight: 700;
+    font-size: 19px;
+
+    padding: 12px 20px;
+    margin-left: 30px;
+    height: 56px;
+    width: 160px;
+
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #56E1F8 0%, #31B6FF 100%);
+    color: black;
+
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.button-login:hover {
+    background: linear-gradient(180deg, #56E1F8 0%, #31B6FF 60%);
+    color: #00003C;
+}
+
+.button-signup:hover {
+    background: linear-gradient(180deg, #56e0f8bb 0%, #31b7ffa9 60%);
+    color: #ffffff;
+}
+
+.solid {
+    color: #fff;
+}
+
+/* .menu-icon {
+    display: none;
+} */
+
+@media (max-width: 800px) {
+    .container {
+      position:relative;
+      /* flex-direction: column; */
+      /* align-items: center;
+      height: auto; */
+    }
+  
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10%;
+        margin-top: 10%;
+        padding-top: 20px;
+    
+        /* flex: 0 0 auto;
+        align-self: center;
+        width: 250px;
+        height: 50px; */
+    }
+    .nav-menu {
+        display: none;
+        /* display: flex;
+        flex-direction: column; */
+        /* padding-left: 0;
+        margin-top: 10px; */
+        /* width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease; */
+    }
+  
+    .button-menu {
+      /* padding-left: 0;
+      margin-top: 10px;
+      justify-content: center; */
+      display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .menu.icon.close {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+
+  }
+
+  

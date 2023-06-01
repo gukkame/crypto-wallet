@@ -4,6 +4,10 @@
     justify-content: flex-start;
     align-items: flex-start;
 
+/*     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+
     margin-top: 7rem;
     gap: 3.125rem;
     height: 40vh;
@@ -11,6 +15,7 @@
 
 .logo {
     margin-left: 10%;
+
 
     width: 15.625rem;
     height: 3.125rem;
@@ -20,7 +25,6 @@
     display: flex;
     flex-direction: column;
 
-    align-self: center;
     justify-content: left;
 
     font-style: normal;
@@ -33,7 +37,6 @@
     text-decoration: none;
     color: white;
 }
-
 .policy h2 {
     display: flex;
     flex-direction: column;
@@ -48,4 +51,14 @@
 .policy a {
     text-decoration: none;
     color: white;
+
 }
+
+.autortiesibas{
+    display: flex;
+    flex-basis: 100%;
+    /* justify-content: center; */
+    margin-left: 18%;
+    
+}
+

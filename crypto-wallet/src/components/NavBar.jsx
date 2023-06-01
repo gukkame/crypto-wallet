@@ -71,7 +71,22 @@ export default function NavBar() {
               <button className={styles["button-login"]}>Ienākt</button>
             </Link>
           </div>
-        </section>
+          <div className={styles["menu-icon solid"]}></div>
+      <div className={styles["menu-icon close"]}></div>
+      <div className="menu-icon" onClick={this.handleClick}>
+            <i className={this.state.clicked ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}></i>
+            </div>
+            <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+                    return (
+                        <li key={index}>
+                            <a className={styles["nav-menu"]} href={item.url}>
+                            {item.h2}
+                            </a>
+                        </li>
+                    )
+            </ul>
+
+    </section>
       ) : (
         <> </>
       )}

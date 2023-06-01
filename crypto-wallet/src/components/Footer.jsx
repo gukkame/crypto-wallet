@@ -75,6 +75,10 @@ export default function Footer() {
           <h2>Digitālo aktīvu atklāšana</h2>
         </Link>
       </div>
+
+      <div className={styles["autortiesibas"]}><h2>Autortiesības 2023 © CryptoCabata</h2>
+</div>
     </div>
+    
   );
 }
