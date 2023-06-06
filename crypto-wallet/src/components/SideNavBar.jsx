@@ -4,9 +4,11 @@ import Link from "next/link";
 import styles from "@/styles/SideNav.module.css";
 import navBar from "@/styles/NavBar.module.css";
 
+import { removeUserFromLocalStorage } from "../modules/localStorage";
+
 export default function SideNavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  
+
   const openCloseNav = (event) => {
     event.preventDefault();
     if (isNavOpen) {
@@ -19,6 +21,8 @@ export default function SideNavBar() {
       setIsNavOpen(true);
     }
   };
+
+
 
   return (
     <>
@@ -103,7 +107,9 @@ export default function SideNavBar() {
             </div>
           </a>
           <a href="/">
-            <button className={navBar["button-login"]}>Iziet</button>
+            <button className={navBar["button-login"]} onClick={removeUserFromLocalStorage}>
+              Iziet
+            </button>
           </a>
         </section>
       </div>

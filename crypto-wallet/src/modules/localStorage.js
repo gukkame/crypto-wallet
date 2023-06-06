@@ -1,8 +1,8 @@
 //sets data into local storage
+export function logout() {}
 
 // Save user in local storage
 export function saveUser(email, password, secret) {
-
   const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
 
   const newUser = {
@@ -29,7 +29,7 @@ export function isLoggedIn() {
   return false;
 }
 
-// User authentication 
+// User authentication
 export function checkLogIn(email, password) {
   const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
 
@@ -44,4 +44,6 @@ export function checkLogIn(email, password) {
 }
 
 // User loged out
-export function removeUserFromLocalStorage() {}
+export function removeUserFromLocalStorage() {
+  localStorage.removeItem("users");
+}
