@@ -1,12 +1,3 @@
-// import { useRouter } from "next/router";
-
-// export default function MainPage() {
-//     const router = useRouter();
-//     const { email } = router.query;
-
-//     return <div>Email: {email}</div>;
-// }
-
 //Main page, when user is logged in
 import SideNavBar from "../components/SideNavBar";
 import PortfTable from "../components/main/PortfolioTable";
@@ -17,12 +8,12 @@ import styles from "@/styles/Main.module.css";
 import home from "@/styles/Home.module.css";
 import icons from "@/styles/Icons.module.css";
 import table from "../components/main/Table.module.css";
+import Footer from "../components/Footer";
 
 export default function MainPage() {
   return (
     <>
       <SideNavBar />
-      
 
       <div id="main" className={styles["main"]}>
         <h2>Atlikums</h2>
@@ -111,6 +102,7 @@ export default function MainPage() {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   );
 }

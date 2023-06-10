@@ -6,8 +6,8 @@ export default function PortfolioTable() {
       <thead>
         <tr>
           <th>Nosaukums</th>
+          <th>Vienības</th>
           <th>Atlikums</th>
-          <th>Cena</th>
           <th>Sadalījums</th>
           <th>Izmaiņas (24h)</th>
         </tr>
@@ -22,13 +22,11 @@ export default function PortfolioTable() {
               <p>EUR</p>
             </div>
           </td>
-          <td>€ 300 </td>
+          <td> </td>
           <td>€27,857</td>
           <td>35%</td>
           <td>
-          <div className={`${styles["imageCell"]} ${styles["green"]}`}>
-              +0.46% <img src="../assets/icons/price_graph.png" />
-            </div>
+          
           </td>
         </tr>
 
@@ -40,7 +38,7 @@ export default function PortfolioTable() {
               <p>BTC</p>
             </div>
           </td>
-          <td>0.25 BTC / € 24, 804.63</td>
+          <td>0.25 BTC</td>
           <td>€483.9B</td>
           <td>28%</td>
           <td>
@@ -58,7 +56,7 @@ export default function PortfolioTable() {
               <p>BNB</p>
             </div>
           </td>
-          <td>0.25 BNB / € 24, 804.63</td>
+          <td>0.25 BNB</td>
           <td>€483.9B</td>
           <td>43%</td>
           <td>

@@ -9,6 +9,7 @@ import home from "@/styles/Home.module.css";
 import icons from "@/styles/Icons.module.css";
 import table from "../components/main/Table.module.css";
 
+
 export default function Main() {
   return (
     <>
@@ -101,6 +102,7 @@ export default function Main() {
           </div>
         </section>
       </div>
+  
     </>
   );
 }

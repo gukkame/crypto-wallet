@@ -44,16 +44,7 @@ export default function SideNavBar() {
               <h3>Galvenā</h3>
             </div>
           </a>
-          <a href="#">
-            <div className={styles["link"]}>
-              <img
-                src="../assets/icons/main_page/graph.png"
-                alt="graph"
-                className={styles["icons"]}
-              ></img>
-              <h3>Mans konts</h3>
-            </div>
-          </a>
+        
           <a href="#">
             <div className={styles["link"]}>
               <img
@@ -79,7 +70,7 @@ export default function SideNavBar() {
           <a href="#">
             <div className={styles["link"]}>
               <img
-                src="../assets/icons/main_page/clock.png"
+                src="../assets/icons/main_page/study.png"
                 alt="clock"
                 className={styles["icons"]}
               ></img>
@@ -89,7 +80,7 @@ export default function SideNavBar() {
           <a href="#">
             <div className={styles["link"]}>
               <img
-                src="../assets/icons/main_page/clock.png"
+                src="../assets/icons/main_page/about_us.png"
                 alt="clock"
                 className={styles["icons"]}
               ></img>
@@ -99,7 +90,7 @@ export default function SideNavBar() {
           <a href="#">
             <div className={styles["link"]}>
               <img
-                src="../assets/icons/main_page/clock.png"
+                src="../assets/icons/main_page/news.png"
                 alt="clock"
                 className={styles["icons"]}
               ></img>

@@ -22,18 +22,18 @@ export default function SecretForm({ onData }) {
           atjaunot aizmirsušos paroli un piekļūt savam makam.
         </p>
         <div className={styles["grid-container"]}>
-          <div className={styles["grid-item"]}>Zaķis </div>
-          <div className={styles["grid-item"]}>Kartupelis </div>
-          <div className={styles["grid-item"]}>Jelgava </div>
-          <div className={styles["grid-item"]}>Suns </div>
-          <div className={styles["grid-item"]}>Krūze </div>
-          <div className={styles["grid-item"]}>Logs </div>
-          <div className={styles["grid-item"]}>Mans </div>
-          <div className={styles["grid-item"]}>Lapa </div>
-          <div className={styles["grid-item"]}>Braukt </div>
-          <div className={styles["grid-item"]}>Lekt </div>
-          <div className={styles["grid-item"]}>Māja </div>
-          <div className={styles["grid-item"]}>Sarkans </div>
+          <div className={styles["grid-item"]}>1. Zaķis </div>
+          <div className={styles["grid-item"]}>2. Kartupelis </div>
+          <div className={styles["grid-item"]}>3. Jelgava </div>
+          <div className={styles["grid-item"]}>4. Suns </div>
+          <div className={styles["grid-item"]}>5. Krūze </div>
+          <div className={styles["grid-item"]}>6. Logs </div>
+          <div className={styles["grid-item"]}>7. Mans </div>
+          <div className={styles["grid-item"]}>8. Lapa </div>
+          <div className={styles["grid-item"]}>9. Braukt </div>
+          <div className={styles["grid-item"]}>10. Lekt </div>
+          <div className={styles["grid-item"]}>11. Māja </div>
+          <div className={styles["grid-item"]}>12. Sarkans </div>
         </div>
       </div>
       <div className={styles["secret-phrase-warning"]}>
