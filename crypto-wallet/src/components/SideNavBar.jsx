@@ -1,10 +1,8 @@
-import { useState } from "react";
-import Link from "next/link";
-
 import styles from "@/styles/SideNav.module.css";
 import navBar from "@/styles/NavBar.module.css";
-
-import { removeUserFromLocalStorage } from "../modules/localStorage";
+import { isLoggedIn } from "../modules/localStorage";
+import { removeUser } from "../modules/localStorage";
+import { useState, useEffect } from "react";
 
 export default function SideNavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -23,7 +21,6 @@ export default function SideNavBar() {
   };
 
 
-
   return (
     <>
       <div
@@ -34,7 +31,7 @@ export default function SideNavBar() {
           &times;
         </a>
         <section>
-          <a href="#">
+          <a href="http://localhost:3000/">
             <div className={styles["link"]}>
               <img
                 src="../assets/icons/main_page/home_icon.png"
@@ -44,7 +41,6 @@ export default function SideNavBar() {
               <h3>Galvenā</h3>
             </div>
           </a>
-        
           <a href="#">
             <div className={styles["link"]}>
               <img
@@ -98,7 +94,10 @@ export default function SideNavBar() {
             </div>
           </a>
           <a href="/">
-            <button className={navBar["button-login"]} onClick={removeUserFromLocalStorage}>
+            <button
+              className={navBar["button-login"]}
+              onClick={removeUser}
+            >
               Iziet
             </button>
           </a>

@@ -6,12 +6,14 @@ import { isLoggedIn } from "../modules/localStorage";
 export default function NavBar() {
   const [userIsLoggedIn, setIsLoggedIn] = useState(false);
   const [url, setURL] = useState("a");
+  const [email, setEmail] = useState("");
 
   useEffect(() => {
     let currentUrl = window.location.href;
     setURL(currentUrl);
+    setEmail(isLoggedIn());
 
-    if (isLoggedIn()) {
+    if (isLoggedIn() != "") {
       setIsLoggedIn(true);
     }
   }, []);
@@ -46,6 +48,31 @@ export default function NavBar() {
             </Link>
           </div>
         </section>
+      ) : userIsLoggedIn && url == "http://localhost:3000/" ? (
+        <section className={styles["container"]}>
+          <img
+            src="../assets/logo-dark.png"
+            alt="React Image"
+            className={styles["logo"]}
+          ></img>
+
+          <div className={styles["nav-menu"]}>
+            <Link href="/">
+              <h2>Par mums</h2>
+            </Link>
+            <Link href="/">
+              <h2>Jaunumi</h2>
+            </Link>
+            <Link href="/">
+              <h2>Mācības</h2>
+            </Link>
+          </div>
+          <div className={styles["button-menu"]}>
+          <Link href={`/${email}`}>
+              <button className={styles["button-login"]}>Profils</button>
+            </Link>
+          </div>
+        </section>
       ) : !userIsLoggedIn && url == "http://localhost:3000/login" ? (
         <section className={styles["container-auth"]}>
           <img
@@ -71,9 +98,6 @@ export default function NavBar() {
               <button className={styles["button-login"]}>Ienākt</button>
             </Link>
           </div>
-         
-          
-        
         </section>
       ) : (
         <> </>
